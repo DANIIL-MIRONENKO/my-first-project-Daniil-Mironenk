@@ -1,0 +1,86 @@
+/* Базовая настройка страницы */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #000000, #434343); /* Градиент, как ночной асфальт */
+    color: #fff; /* Белый текст для контраста */
+  }
+  
+  /* Стили для заголовков */
+  h1, h2, h3 {
+    font-family: 'Helvetica', sans-serif;
+    color: #FF6600; /* Оранжевый — цвет AMG */
+    text-align: center;
+  }
+  
+  /* Заголовок главной песни */
+  h1 {
+    font-size: 48px;
+    margin-top: 50px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  
+  /* Стили для текста в песне */
+  .song-text {
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Прозрачный черный фон */
+    border-radius: 10px;
+    width: 80%;
+    margin: 30px auto;
+    text-align: justify;
+    font-weight: bold;
+  }
+  
+  /* Стили для припева */
+  .song-text .chorus {
+    color: #FF6600; /* Цвет для припева — яркий, как огонь */
+    font-style: italic;
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 0;
+  }
+  
+  /* Контейнер для изображения машины */
+  .car-image {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 30px auto;
+    border: 5px solid #FF6600; /* Оранжевая рамка */
+    border-radius: 15px;
+  }
+  
+  /* Кнопка воспроизведения песни */
+  .play-button {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 50px auto;
+    background-color: #FF6600;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .play-button:hover {
+    background-color: #e55b00; /* Более темный оранжевый цвет при наведении */
+  }
+  
+  /* Анимация для текста песни */
+  @keyframes fadeInText {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .song-text {
+    animation: fadeInText 2s ease-in-out;
+  }
